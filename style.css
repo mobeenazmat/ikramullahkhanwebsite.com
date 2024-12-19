@@ -305,7 +305,7 @@ color: #f44336;
 /* ------------cta--------- */
 
 .cta{
-    margin: 100px 100px 0px 50px;
+    margin: 40px 100px 0px 50px;
     width: 80%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(enroll.jpg);
     background-position: center;
@@ -565,7 +565,7 @@ color: #fff;
 }
 .blogpost{
     width: 70%;
-    padding: 20px 80px;
+    padding: 0px 0px;
 }
 @media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (-webkit-device-pixel-ratio: 3) {
     .footer {
@@ -575,4 +575,12 @@ color: #fff;
         margin: 0 auto;
         text-align: center;
     }
+    .blogform{
+        position: relative;
+        left: 50px;
+    }
+    .cta{
+        margin: 100px 100px 0px 30px;
+    }
+   
 }
