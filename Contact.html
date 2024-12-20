@@ -35,7 +35,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d26383.206040572783!2d72.01271875301714!3d34.251075977262275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d34.2419091!2d72.0247315!4m5!1s0x38deb67776866ea3%3A0xac86a879edfde483!2sShankar%2C%20Mardan%2C%20Khyber%20Pakhtunkhwa%2023200!3m2!1d34.2599!2d72.0425479!5e0!3m2!1sen!2s!4v1734537110672!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <div class="image">
-        <img src="ikram.jpg" alt="">
+        <img src="ikram.jpg" alt="" id="imagecard6">
         <video width="720" height="480" controls>
             <source src="ikram vid.mp4" type="video/mp4">
            
@@ -101,6 +101,20 @@
         function hideMenu(){
             navLinks.style.right="-200px";
         }
+
+                 const img6 = document.getElementById('imagecard6');
+
+img6.addEventListener('click', () => {
+  if (img6.requestFullscreen) {
+    img6.requestFullscreen();
+  } else if (img6.webkitRequestFullscreen) { // For Safari
+    img6.webkitRequestFullscreen();
+  } else if (img6.msRequestFullscreen) { // For IE
+    img6.msRequestFullscreen();
+  } else {
+    alert('Fullscreen API is not supported in your browser.');
+  }
+});
     </script>
 </body>
 
