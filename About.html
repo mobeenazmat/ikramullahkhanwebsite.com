@@ -40,7 +40,7 @@
             <a href="Course.html" class="hero-btn red-btn">Explore Now</a>
         </div>
         <div class="about-col">
-            <img src="about.webp" alt="">
+            <img src="about.webp" alt="" id="imagecard4">
         </div>
 
        </div>
@@ -69,6 +69,20 @@
         function hideMenu(){
             navLinks.style.right="-200px";
         }
+
+               const img4 = document.getElementById('imagecard4');
+
+img4.addEventListener('click', () => {
+  if (img4.requestFullscreen) {
+    img4.requestFullscreen();
+  } else if (img4.webkitRequestFullscreen) { // For Safari
+    img1.webkitRequestFullscreen();
+  } else if (img4.msRequestFullscreen) { // For IE
+    img4.msRequestFullscreen();
+  } else {
+    alert('Fullscreen API is not supported in your browser.');
+  }
+});
     </script>
 </body>
 
