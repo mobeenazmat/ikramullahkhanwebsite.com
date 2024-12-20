@@ -113,6 +113,14 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+    .header{
+    min-width: 100%;
+    min-height:100vh ;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image1.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 }
 
 /* ---------course---------- */
