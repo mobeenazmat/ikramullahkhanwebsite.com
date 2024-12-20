@@ -32,7 +32,7 @@
     <section class="blog-content">
         <div class="row">
             <div class="blog-left">
-                <img src="ikram1.jpg" alt="">
+                <img src="ikram1.jpg" alt="" id="imagecard5">
                 <h2>New Khush Naseeb Mobile Shop</h2>
                 <p>New Khush Naseeb Mobile Shop is your trusted destination for all mobile-related needs and more. Located at the heart of City Mardan, our shop provides a wide variety of mobile phones, accessories, and top-notch services. Whether you need the latest smartphone or high-quality accessories, we have a wide range of options to suit your preferences. Our goal is to offer you products that combine quality, reliability, and the best prices.</p>
                 <br>
@@ -112,6 +112,20 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+
+                const img5 = document.getElementById('imagecard5');
+
+img5.addEventListener('click', () => {
+  if (img5.requestFullscreen) {
+    img5.requestFullscreen();
+  } else if (img5.webkitRequestFullscreen) { // For Safari
+    img5.webkitRequestFullscreen();
+  } else if (img5.msRequestFullscreen) { // For IE
+    img5.msRequestFullscreen();
+  } else {
+    alert('Fullscreen API is not supported in your browser.');
+  }
+});
     </script>
 </body>
 
