@@ -101,6 +101,46 @@
         function hideMenu(){
             navLinks.style.right="-200px";
         }
+
+                       const img1 = document.getElementById('imagecard1');
+               const img2 = document.getElementById('imagecard2');
+               const img3 = document.getElementById('imagecard3');
+
+img1.addEventListener('click', () => {
+  if (img1.requestFullscreen) {
+    img1.requestFullscreen();
+  } else if (img1.webkitRequestFullscreen) { // For Safari
+    img1.webkitRequestFullscreen();
+  } else if (img1.msRequestFullscreen) { // For IE
+    img1.msRequestFullscreen();
+  } else {
+    alert('Fullscreen API is not supported in your browser.');
+  }
+});
+
+img2.addEventListener('click', () => {
+  if (img2.requestFullscreen) {
+    img2.requestFullscreen();
+  } else if (img2.webkitRequestFullscreen) { // For Safari
+    img2.webkitRequestFullscreen();
+  } else if (img2.msRequestFullscreen) { // For IE
+    img2.msRequestFullscreen();
+  } else {
+    alert('Fullscreen API is not supported in your browser.');
+  }
+});
+
+img3.addEventListener('click', () => {
+  if (img3.requestFullscreen) {
+    img3.requestFullscreen();
+  } else if (img3.webkitRequestFullscreen) { // For Safari
+    img3.webkitRequestFullscreen();
+  } else if (img3.msRequestFullscreen) { // For IE
+    img3.msRequestFullscreen();
+  } else {
+    alert('Fullscreen API is not supported in your browser.');
+  }
+});
     </script>
 </body>
 
