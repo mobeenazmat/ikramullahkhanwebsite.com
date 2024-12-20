@@ -93,19 +93,19 @@
         <p>At New Khush Naseeb Mobile Shop, we provide a wide range of services to make  your life <br>easier and more convenient.</p>
         <div class="row">
             <div class="facilities-col">
-                <img src="card1.jpg" alt="" class="card3">
+                <img src="card1.jpg" alt="" class="card3" id="imagecard1">
                 <h3><a href="Contact.html">Click for Contact</a></h3>
                 <h3>NADRA Services:</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ad recusandae esse reiciendis placeat consequuntur?</p>
             </div>
             <div class="facilities-col">
-                <img src="card2.jpg" alt="">
+                <img src="card2.jpg" alt="" id="imagecard2" class="card3">
                 <h3><a href="Contact.html">Click for Contact</a></h3>
                 <h3>FBR Tax Filing:</h3>
                 <p>Need help with filing your taxes? Our experienced team can assist you in completing your FBR tax filings efficiently, ensuring you're compliant with all tax regulations</p>
             </div>
             <div class="facilities-col">
-                <img src="card3.jpg" alt="" class="card3">
+                <img src="card3.jpg" alt="" class="card3" id="imagecard3">
                 <h3><a href="Contact.html">Click for Contact</a></h3>
                 <h3>Online Apply</h3>
                 <p>We assist you in applying for various jobs, guiding you through the process and helping you find the right opportunity. Whether you're applying for undergraduate or postgraduate programs, we provide expert advice and support to streamline your university application process.</p>
@@ -178,6 +178,46 @@
         function hideMenu(){
             navLinks.style.right="-200px";
         }
+
+               const img1 = document.getElementById('imagecard1');
+               const img2 = document.getElementById('imagecard2');
+               const img3 = document.getElementById('imagecard3');
+
+img1.addEventListener('click', () => {
+  if (img1.requestFullscreen) {
+    img1.requestFullscreen();
+  } else if (img1.webkitRequestFullscreen) { // For Safari
+    img1.webkitRequestFullscreen();
+  } else if (img1.msRequestFullscreen) { // For IE
+    img1.msRequestFullscreen();
+  } else {
+    alert('Fullscreen API is not supported in your browser.');
+  }
+});
+
+img2.addEventListener('click', () => {
+  if (img2.requestFullscreen) {
+    img2.requestFullscreen();
+  } else if (img2.webkitRequestFullscreen) { // For Safari
+    img2.webkitRequestFullscreen();
+  } else if (img2.msRequestFullscreen) { // For IE
+    img2.msRequestFullscreen();
+  } else {
+    alert('Fullscreen API is not supported in your browser.');
+  }
+});
+
+img3.addEventListener('click', () => {
+  if (img3.requestFullscreen) {
+    img3.requestFullscreen();
+  } else if (img3.webkitRequestFullscreen) { // For Safari
+    img3.webkitRequestFullscreen();
+  } else if (img3.msRequestFullscreen) { // For IE
+    img3.msRequestFullscreen();
+  } else {
+    alert('Fullscreen API is not supported in your browser.');
+  }
+});
     </script>
 </body>
 
