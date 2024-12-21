@@ -578,6 +578,9 @@ color: #fff;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+.audio audio{
+    display: none;
+}
 .blogpost{
     width: 70%;
     padding: 0px 0px;
